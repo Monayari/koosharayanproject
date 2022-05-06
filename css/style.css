@@ -1,0 +1,367 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*شروع افزودن فونت */
+
+
+@font-face {
+    font-family: SG;
+    font-style: normal;
+    src:url("../font/SOGAND.ttf") format(ttf);
+}
+@font-face{
+	font-family: IS;
+	font-style: normal;
+	src: url("../font/IRAN Sans Regular (mmrostami.blog.ir).ttf");
+}
+/*پایان افزودن فونت */
+
+
+
+body{
+	background-color: #F9F9F9;
+	font-family:IS;
+}
+.z-brnd{
+	font-family: SG !important;
+}
+a{
+	text-decoration: none !important;
+}
+/* منوی همبرگری */
+
+@media (max-width:575px){
+	.z-hdr{
+		display: none !important;
+	}
+	
+}
+@media (min-width:576px){ /*یعنی برای عناصری با عرض بیشتر از 576 */
+
+	.z-brnd{
+		display: none !important;
+	}
+	.z-tozihat{
+		margin-top: 100px !important;
+	}
+	.z-mahsolat{
+		margin-top: 100px !important;
+	}
+	.z-shrka{
+		margin-top: 100px !important;
+	}
+
+}
+@media (max-width:768px){ /* یعنی عناصری با عرض کمتر ار 768 پیکسل */
+	.z-img-tozihat{
+		width: 200px!important;
+		height: 200px!important;
+		margin-top: 10px !important;
+	}
+	.z-img-shrka img{
+		margin-bottom: 210px !important;
+	}
+
+	
+}
+@media (min-width:768px){
+	.z-khabar img{
+		height: 150px !important;
+		width: 100% !important;
+	}
+		.z-shrka{
+	margin-top: 100px;
+}
+	.z-img-shrka img{
+		margin-bottom: 60px !important;
+	}
+	.z-footer{
+		margin-top: 100px !important;
+	}
+
+}
+
+.card-text{
+	overflow: hidden;
+}
+
+.z-mahsolat .card-text{
+	font-size: 13px;
+}
+
+
+
+.custom-border::before {
+	content: '';
+	width: 100%;
+	height: 2px;
+	display: block;
+	background-image: linear-gradient(90deg, blue 10%,green 90%);
+	position: relative;
+	top: 38px;
+}
+.custom-col{
+	padding-left: 7px !important;
+	padding-right: 7px !important;
+}
+.custom-col p{
+	font-size: 16px !important;
+}
+.z-khabar a, strong{
+	font-size: 16px !important;
+}
+.z-footer .i1:hover{
+	color: #EF1674 !important;
+	background-color: #F8F8F8 !important;
+	border-radius: 50% !important;
+	opacity: .7 !important;
+}
+.z-footer .i2:hover{
+	color: #020874 !important;
+	background-color: #F8F8F8 !important;
+	border-radius: 50% !important;
+	opacity: .7 !important;
+}
+.z-footer .i3:hover{
+	color: #3488D6 !important;
+	background-color: #F8F8F8 !important;
+	border-radius: 50% !important;
+	opacity: .7 !important;
+}
+.z-footer .i4:hover{
+	color: #3488D6 !important;
+	background-color: #F8F8F8 !important;
+	border-radius: 50% !important;
+	opacity: .7 !important;
+}
+.z-footer .i5:hover{
+	color: #218E0C !important;
+	background-color: #F8F8F8 !important;
+	border-radius: 50% !important;
+	opacity: .7 !important;
+}
+
+.z-footer i{
+	transition: all ease .5s;
+}
+/*شروع افکت روی شرکا */
+
+.z-show-sh:hover img{
+	opacity: .5;
+	width: 100%;
+	height: 100%;
+}
+.z-img-shrka img{
+	transition: all ease .5s;
+}
+@media (max-width:768px){
+	.z-show-sh img{
+		margin-bottom: 20px !important;
+		
+	}
+}
+
+/*پایان افکت روی شرکا */
+
+/*شروع افکت روی محصولات */
+
+.mahsol .txt-mhs{
+	font-size: 13px !important;
+	position: absolute !important;
+	display: block !important;
+	z-index: 222 !important;
+	padding:1% 20%;
+	cursor: pointer;
+	transition: all ease .5s;
+}
+.mahsol{
+	position: relative;
+	transition: all ease .5s;
+	height: 200px !important;
+}
+.mahsol:hover {
+	box-shadow: 2px 1px 2px;
+}
+@media (max-width:400px){
+	
+	
+	}
+
+@media (max-width:767px){
+	.mahsol{
+		margin-bottom: 20% !important;
+	}
+	}
+@media (max-width:575px){
+	.mahsol .txt-mhs{
+		margin-top: -10% !important;
+		margin-right: 27% !important;
+	}
+	}
+@media (min-width:576px){
+	.mahsol .txt-mhs{
+		margin-top: -10% !important;
+		margin-right: 27% !important;
+	}
+	}
+@media (min-width:768px){
+	.mahsol .txt-mhs{
+		margin-top: 50% !important;
+		margin-right: 0 !important;
+	}
+}
+@media (min-width:992px){
+	.mahsol .txt-mhs{
+		margin-top: 55% !important;
+		margin-right: 0 !important;
+	}
+}
+@media (min-width:1200px){
+	.mahsol .txt-mhs{
+		margin-top: 64% !important;
+		margin-right: 0 !important;
+	}
+}
+@media (max-width:500px){
+	.mahsol{
+		margin-bottom: 16px !important;
+	}
+	.mahsol .txt-mhs{
+		margin-top: -10% !important;
+		margin-right: 27% !important;
+	
+	}
+	}
+@media (max-width:414px){
+	.mahsol{
+		margin-bottom: 25px !important;
+	}
+	}
+@media (max-width:320px){
+		.mahsol .txt-mhs{
+			margin-top: 2% !important;
+	}
+	}
+
+.z-scl:hover .mahsol{
+	transform: translateY(-4px) scale(1.02);
+}
+.z-scl:hover .txt-mhs{
+	background-color: #B1B0B0 !important;
+}
+
+/*پایان افکت روی محصولات */
+
+
+#back{
+width: 80px !important;
+height: 80px !important;
+float: left !important;
+position: absolute;
+z-index: 22222 !important;
+top: -150px !important;
+}
+@media (max-width:767px){
+	.z-see{
+		display: none !important;
+	}
+}
+/* تغیر سایز اسلایدر*/
+#size-slider img{
+	height: 380px !important;
+}
+
+/* شروع منو */
+.z-menu a{
+	color: #fff !important;
+}
+	.z-menu{
+	cursor: pointer;
+}
+	 .z-menu a:not([rel*=attachment]) {
+    transition: .15s;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+}
+	
+	 .z-menu a:not([rel*=attachment]):active:before,  .z-menu a:not([rel*=attachment]):hover:before {
+    transform: scaleX(1);
+	}
+	 .z-menu a:not([rel*=attachment]):before{
+	content: "";
+    transition: inherit;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 1px;
+   background: currentcolor;
+    transform: scaleX(0);
+	}
+/* پایان منو */
+
+@media (max-width:767px){
+.z-khbr img{
+	height: 220px !important;
+}	
+}
+@media (max-width:1199px){
+	.z-khbr{
+		margin-bottom: 10px !important;
+	}
+}
+.khbr-container-fluid{
+	margin-top: 200px !important;
+}
+
+.z-list-khbr{
+	margin-top:100px !important;
+}
+
+.z-tekno{
+	margin-top: 250px !important;
+}
+
+.z-col::before {
+	content: '';
+	width: 100%;
+	height: 2px;
+	display: block;
+	background-color: #999999;
+	position: relative;
+	top: 38px;
+}
+.custom-col{
+	padding-left: 7px !important;
+	padding-right: 7px !important;
+}
+
+
+.z-srch-khbr{
+	height: 200px ;
+	background-image: url("../img/14.jpg");
+	background-image: linear-gradient(90deg,#f9f9f9);
+}
+#item1{
+	margin-top: 100px !important;
+}
+@media (min-width:1200px){
+	.item{
+		margin-bottom: 80px !important;
+	}
+}
+.z-matlab-khbr{
+	margin-top: 90px !important;
+}
+
+.z-img-pro img{
+	transition: all ease .5s;
+}
+.z-img-pro:hover img{
+	cursor: pointer;
+	filter: saturate(280%);
+}
+
+
+
